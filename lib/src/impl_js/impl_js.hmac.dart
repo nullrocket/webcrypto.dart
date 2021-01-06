@@ -79,7 +79,7 @@ Future<HmacSecretKey> hmacSecretKey_generateKey(Hash hash, {int length}) async {
 }
 
 class _HmacSecretKey implements HmacSecretKey {
-  final subtle.CryptoKey _key;
+  final CryptoKey _key;
   _HmacSecretKey(this._key);
 
   @override
